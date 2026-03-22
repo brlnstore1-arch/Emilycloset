@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extrair projeto
-        run: unzip emily-closet-v2.zip
+        run: unzip emily-closet.zip
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -33,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'emily-closet-v2'
+          path: 'emily-closet-final'
 
       - name: Deploy to GitHub Pages
         id: deployment
